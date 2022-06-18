@@ -1,0 +1,135 @@
+*{
+   box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    border: 15px solid white;
+    background-color:#ffe4e6b0;
+    color: rgb(131, 128, 128);
+    min-height:100vh;
+    font-family: 'Truculenta', sans-serif;
+    font-size: 22px;
+}
+h3{
+    text-align: center;
+    font-size:45px;
+    color:#FDA4AF;
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+h4{
+    font-size:35px;  
+}
+h4::before{
+    content: '';
+    display: block;
+    width: 1em;
+    height: 3px;
+    margin-bottom: 2px;
+    background: #fb7186d5;
+   
+}
+input{
+    width: 90%;
+    height: 40px;
+    border: none;
+    outline: 1px solid #FECDD3;
+    border-radius: 5px;
+    margin-bottom: 2.3em;
+}
+input:hover, input:focus{
+    outline: 1px solid #FB7185; 
+}
+span{
+    margin-top:5px
+}
+.pages{
+    display: flex;
+    justify-content: center;  
+}
+
+.element{
+    padding:1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.circle{
+  background-color:white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  line-height: 50px;
+  
+}
+.circle p{
+    padding:20px;
+     text-align: center;
+     font-weight: bolder;
+}
+.active{
+    background-color: #FB7185;
+    color:  #fff1f2;
+}
+.activ{
+   color: #FB7185;
+   font-weight: bold;
+}
+.main{
+    margin: 0 auto;
+    width:70%;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    background-color: #fff1f2;
+    padding:1.2em;   
+    border-radius: 5px;
+}
+.main-content{
+    grid-column:  span 3;
+    grid-row: 1;
+    color:#FDA4AF;
+}
+.main-content p{
+    margin-bottom:7px
+}
+.aside{
+    grid-column: 4;
+    letter-spacing: 1.5px;
+}
+.btn{
+    background-color:#FB7185;
+    color:#fff1f2;
+    width:100px;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: transform 200ms ease-in-out; 
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+
+   .btn:hover,  .btn:active{
+        color:   #FB7185;
+    border: 1px solid #FB7185;
+    background-color: #fff1f2;
+    transform: scale(1.1);
+}
+@media (max-width:780px) {
+
+    .main{
+        display:flex;
+        flex-direction: column;
+    }
+    .btn{
+        margin-bottom:30px
+    }
+}
